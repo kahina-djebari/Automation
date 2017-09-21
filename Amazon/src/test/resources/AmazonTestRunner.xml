@@ -4,7 +4,7 @@
 <suite name="Amazon Automation Test" parallel="tests">
 
 
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
@@ -14,13 +14,14 @@
 
     <test name = "Amazon Home">
         <classes>
-          <!--  <class name="AmazonHome.TestDepartments"/>
-            <class name="AmazonHome.TestSearchItems"/>
+           <!-- <class name="AmazonHome.TestDepartments"/>
             <class name="AmazonHome.TestDropDownMenu"/>
             <class name="AmazonHome.TestDropDownList"/>
             <class name="AmazonHome.TestChangeLanguage"/>
             <class name="AmazonHome.TestCartBtn"/>
-            <class name="AmazonHome.TestSignIn"/>-->
+            <class name="AmazonHome.TestSignIn"/>
+            <class name="AmazonHome.TestHomeBtns"/>
+            <class name="AmazonHome.TestSearchItems"/>-->
             <class name="AmazonHome.TestSearchByReadingFromXlFile"/>
         </classes>
     </test>

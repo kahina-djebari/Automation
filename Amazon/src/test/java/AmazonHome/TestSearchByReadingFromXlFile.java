@@ -4,6 +4,7 @@ import common.commonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import page.PageSearchItems;
+import reporting.ApplicationLog;
 
 import java.io.IOException;
 

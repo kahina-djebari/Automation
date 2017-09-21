@@ -34,34 +34,60 @@ public class HomePage extends commonAPI {
 
     @FindBy(how = How.XPATH, using = ".//*[@id='nav-cart']/span[3]")
     public static WebElement cartBtn;
+
     public void clickOnCart() {
         cartBtn.click();
         System.out.println(getCurrentPageUrl());
-        String title = "Amazon.com Shopping Cart";
-        String currentTitle = driver.getTitle();
-        System.out.println(currentTitle);
-        Assert.assertEquals(currentTitle, title);
+        String actualTitle = "Amazon.com Shopping Cart";
+        String expectedTitle = driver.getTitle();
+        System.out.println(expectedTitle);
+        Assert.assertEquals(expectedTitle, actualTitle);
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id='nav-link-accountList']/span[1]")
     public static WebElement signInBtn;
+
     public void signIn() {
         signInBtn.click();
         System.out.println(getCurrentPageUrl());
-        String title = "Amazon Sign In";
-        String currentTitle = driver.getTitle();
-        System.out.println(currentTitle);
-        Assert.assertEquals(currentTitle,title);
+        String actualTitle = "Amazon Sign In";
+        String expectedTitle = driver.getTitle();
+        System.out.println(expectedTitle);
+        Assert.assertEquals(expectedTitle,actualTitle);
     }
 
     @FindBy(how = How.LINK_TEXT,using = "Kitchen & Dining") //locators issue
     public static WebElement kitchenAndDining;
-    @FindBy(how = How.LINK_TEXT,using = "Departments")
-    public static WebElement departments;
+
     public void departments() throws InterruptedException {
         mouseHoverByLinkText("Departments");
-        sleepFor(3);
+        sleepFor(2);
         mouseHoverByLinkText("Home, Garden & Tools");
         kitchenAndDining.click();
+    }
+
+    @FindBy(how = How.XPATH,using = ".//*[@id='nav-your-amazon']")
+    public static WebElement yourAmazonBtn;
+    @FindBy(how = How.XPATH,using = ".//*[@id='nav-xshop']/a[2]")
+    public static WebElement todaysDealsBtn;
+    @FindBy(how = How.XPATH,using = ".//*[@id='nav-xshop']/a[3]")
+    public static WebElement giftCardsBtn;
+    @FindBy(how = How.XPATH,using = ".//*[@id='nav-xshop']/a[4]")
+    public static WebElement sellBtn;
+    @FindBy(how = How.XPATH,using = ".//*[@id='nav-xshop']/a[5]")
+    public static WebElement helpBtn;
+
+    public void homeBtns() throws InterruptedException {
+        yourAmazonBtn.click();
+        checkTitle("Amazon Sign In");
+        navigateBack();
+        todaysDealsBtn.click();
+        checkTitle("Gold Box Deals | Today's Deals - Amazon.com");
+        giftCardsBtn.click();
+        checkTitle("Gift Cards & Registry @ Amazon.com");
+        sellBtn.click();
+        checkTitle("Amazon.com: Sell Products Online with Selling on Amazon");
+        helpBtn.click();
+        checkTitle("Amazon.com Help");
     }
 }
