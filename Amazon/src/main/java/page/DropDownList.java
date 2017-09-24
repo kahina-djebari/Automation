@@ -1,6 +1,5 @@
 package page;
 
-import com.sun.org.apache.bcel.internal.generic.Select;
 import common.commonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

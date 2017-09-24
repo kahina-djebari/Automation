@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Amazon/Amazon.iml" filepath="$PROJECT_DIR$/Amazon/Amazon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BankOfAmerica/BankOfAmerica.iml" filepath="$PROJECT_DIR$/BankOfAmerica/BankOfAmerica.iml" />
       <module fileurl="file://$PROJECT_DIR$/Facebook/Facebook.iml" filepath="$PROJECT_DIR$/Facebook/Facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wegmans/Wegmans.iml" filepath="$PROJECT_DIR$/Wegmans/Wegmans.iml" />
       <module fileurl="file://$PROJECT_DIR$/automation.iml" filepath="$PROJECT_DIR$/automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
     </modules>

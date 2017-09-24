@@ -7,15 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Amazon" />
+        <module name="BankOfAmerica" />
         <module name="Facebook" />
         <module name="generic" />
+        <module name="Wegmans" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Amazon" target="1.8" />
       <module name="automation" target="1.8" />
+      <module name="BankOfAmerica" target="1.8" />
       <module name="Facebook" target="1.8" />
       <module name="generic" target="1.8" />
+      <module name="Wegmans" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

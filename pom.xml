@@ -12,6 +12,8 @@
         <module>generic</module>
         <module>Amazon</module>
         <module>Facebook</module>
+        <module>BankOfAmerica</module>
+        <module>Wegmans</module>
     </modules>
 
     <dependencyManagement>
