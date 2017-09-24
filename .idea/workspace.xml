@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25bec6a-992d-49c4-a7ce-c70ec389e163" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Amazon/src/main/java/page/DropDownList.java" afterPath="$PROJECT_DIR$/Amazon/src/main/java/page/DropDownList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" afterPath="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Facebook/src/test/resources/FacebookTestRunner.xml" afterPath="$PROJECT_DIR$/Facebook/src/test/resources/FacebookTestRunner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Facebook/target/test-classes/FacebookTestRunner.xml" afterPath="$PROJECT_DIR$/Facebook/target/test-classes/FacebookTestRunner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +25,8 @@
       <file leaf-file-name="AmazonTestRunner.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            <state relative-caret-position="248">
+              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -50,8 +45,8 @@
       <file leaf-file-name="FacebookTestRunner.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Facebook/src/test/resources/FacebookTestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="69" lean-forward="true" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+            <state relative-caret-position="441">
+              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -161,10 +156,10 @@
         <option value="$PROJECT_DIR$/generic/src/main/java/common/commonAPI.java" />
         <option value="$PROJECT_DIR$/Amazon/src/main/java/page/HomePage.java" />
         <option value="$PROJECT_DIR$/Amazon/src/test/java/AmazonHome/TestSearchItems.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
         <option value="$PROJECT_DIR$/Amazon/src/main/java/page/DropDownList.java" />
-        <option value="$PROJECT_DIR$/Facebook/src/test/resources/FacebookTestRunner.xml" />
         <option value="$PROJECT_DIR$/Facebook/src/main/java/page/FacebookHome.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
+        <option value="$PROJECT_DIR$/Facebook/src/test/resources/FacebookTestRunner.xml" />
       </list>
     </option>
   </component>
@@ -1195,16 +1190,13 @@
       <workItem from="1505833062965" duration="14126000" />
       <workItem from="1505915908898" duration="16322000" />
       <workItem from="1506008127608" duration="5396000" />
-      <workItem from="1506183718670" duration="3418000" />
+      <workItem from="1506183718670" duration="4727000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="C__Users_Kahina_IdeaProjects_automation_Amazon_src_test_resources_AmazonTestRunner_xml - 2017.09.24 at 14h 16m 41s.xml">
       <configuration name="C:/Users/Kahina/IdeaProjects/automation/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Kahina_IdeaProjects_automation_Facebook_src_test_resources_FacebookTestRunner_xml - 2017.09.21 at 18h 03m 41s.xml">
-      <configuration name="C:/Users/Kahina/IdeaProjects/automation/Facebook/src/test/resources/FacebookTestRunner.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="C__Users_Kahina_IdeaProjects_automation_Facebook_src_test_resources_FacebookTestRunner_xml - 2017.09.21 at 18h 04m 28s.xml">
       <configuration name="C:/Users/Kahina/IdeaProjects/automation/Facebook/src/test/resources/FacebookTestRunner.xml" configurationId="TestNG" />
@@ -1230,9 +1222,12 @@
     <history-entry file="C__Users_Kahina_IdeaProjects_automation_Facebook_src_test_resources_FacebookTestRunner_xml - 2017.09.24 at 14h 36m 39s.xml">
       <configuration name="C:/Users/Kahina/IdeaProjects/automation/Facebook/src/test/resources/FacebookTestRunner.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Kahina_IdeaProjects_automation_Facebook_src_test_resources_FacebookTestRunner_xml - 2017.09.24 at 15h 57m 34s.xml">
+      <configuration name="C:/Users/Kahina/IdeaProjects/automation/Facebook/src/test/resources/FacebookTestRunner.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141106000" />
+    <option name="totallyTimeSpent" value="142415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
@@ -1677,16 +1672,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        <state relative-caret-position="248">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Facebook/src/test/resources/FacebookTestRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="69" lean-forward="true" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+        <state relative-caret-position="441">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding />
         </state>
       </provider>

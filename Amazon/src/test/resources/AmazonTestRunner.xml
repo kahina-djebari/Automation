@@ -4,12 +4,12 @@
 <suite name="Amazon Automation Test" parallel="tests">
 
 
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="Firefox"/>
-    <parameter name="browserVersion" value="54"/>
+    <parameter name="browserVersion" value="53.0"/>
     <parameter name="url" value="http://amazon.com"/>
 
     <test name = "Amazon Home">
