@@ -9,13 +9,19 @@
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="Firefox"/>
-    <parameter name="browserVersion" value="54"/>
+    <parameter name="browserVersion" value="53.0"/>
     <parameter name="url" value="https://www.facebook.com/"/>
 
     <test name = "Facebook Home">
         <classes>
-            <class name="TestFacebookHome.TestLogin"/>
+            <!--<class name="TestFacebookHome.TestLoginLogout"/>-->
             <!--<class name="TestFacebookHome.TestCreateAccount"/>-->
+            <!--<class name="TestFacebookProfile.TestSearch"/>-->
+           <!-- <class name="TestFacebookProfile.TestSearchFriends"/>-->
+            <!--<class name="TestFacebookHome.TestCreatePage"/>-->
+            <!--<class name="TestFacebookHome.TestForgotAccount"/>-->
+            <class name="TestFacebookProfile.TestLeftButtons"/>
+           <!-- <class name="TestFacebookProfile.TestChangeSettings"/>-->
         </classes>
     </test>
 

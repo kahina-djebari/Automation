@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Bank Of America Automation Test" parallel="tests">
+
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="Firefox"/>
+    <parameter name="browserVersion" value="53.0"/>
+    <parameter name="url" value="https://www.bankofamerica.com/"/>
+
+    <test name = "BOA Home">
+        <classes>
+            <class name="testBOAHomePage.TestMainNavBtns"/>
+        </classes>
+    </test>
+
+</suite>

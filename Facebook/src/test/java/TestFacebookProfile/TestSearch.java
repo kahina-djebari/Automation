@@ -12,10 +12,11 @@ import page.FacebookProfile;
 public class TestSearch extends commonAPI {
 
     @Test
-    public void testSherchFriends(){
+    public void testSherchFriends() throws InterruptedException {
         FacebookHome facebookHome = PageFactory.initElements(driver,FacebookHome.class);
         facebookHome.login("kahina_djebari@yahoo.fr","kahinadgd");
         FacebookProfile facebookProfile = PageFactory.initElements(driver,FacebookProfile.class);
         facebookProfile.search("dadou");
+        facebookProfile.search("kahina");
     }
 }

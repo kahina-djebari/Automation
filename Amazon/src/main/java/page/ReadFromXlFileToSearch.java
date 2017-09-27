@@ -1,6 +1,7 @@
 package page;
 
 import common.commonAPI;
+import reporting.TestLogger;
 import utility.DataReader;
 
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.io.IOException;
 public class ReadFromXlFileToSearch extends commonAPI {
     DataReader dr = new DataReader();
     public String [] getDataFromExcelFile()throws IOException {
+//        TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         String path = System.getProperty("user.dir")+"/data/itemsToSearch.xls";
         String [] st = dr.fileReader(path);
         return st;

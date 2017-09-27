@@ -4,7 +4,7 @@
 <suite name="Amazon Automation Test" parallel="tests">
 
 
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
@@ -14,8 +14,14 @@
 
     <test name = "Facebook Home">
         <classes>
-            <class name="TestFacebookHome.TestLogin"/>
+            <!--<class name="TestFacebookHome.TestLoginLogout"/>-->
             <!--<class name="TestFacebookHome.TestCreateAccount"/>-->
+            <!--<class name="TestFacebookProfile.TestSearch"/>-->
+           <!-- <class name="TestFacebookProfile.TestSearchFriends"/>-->
+            <!--<class name="TestFacebookHome.TestCreatePage"/>-->
+            <!--<class name="TestFacebookHome.TestForgotAccount"/>-->
+           <!-- <class name="TestFacebookProfile.TestLeftButtons"/>-->
+           <!-- <class name="TestFacebookProfile.TestChangeSettings"/>-->
         </classes>
     </test>
 

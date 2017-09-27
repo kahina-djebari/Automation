@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import reporting.TestLogger;
 
 import java.io.IOException;
 
@@ -26,26 +27,29 @@ public class PageSearchItems extends commonAPI {
         return submitButtonWebElement;
     }
 
-    public static void searchFor(String value){
+    public void searchFor(String value){
+//        TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass()
+//                .getEnclosingMethod().getName()+ ": "+ value));
         getSearchInputWebElement().sendKeys(value);
     }
     public static void submitSearchButton(){
         getSubmitButtonWebElement().click();
     }
     public void clearSearchInput() {
+//        TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         getSearchInputWebElement().clear();
     }
     public void getDataFromExcelFileAndSearch()throws IOException, InterruptedException {
+//        TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         //Create instance of Excel file reader class
-        ReadFromXlFileToSearch readFromXlFileToSearch = new ReadFromXlFileToSearch();
+        ReadFromXlFileToSearch itemsToBeSearched = new ReadFromXlFileToSearch();
         //Page Factory class init
         PageSearchItems search = PageFactory.initElements(driver, PageSearchItems.class);
         //Read data from Excel File.
-        String[] value = readFromXlFileToSearch.getDataFromExcelFile();
+        String[] value = itemsToBeSearched.getDataFromExcelFile();
         //Running for each loop
         for (int i = 1; i < value.length; i++) {
             search.searchFor(value[i]);
-            submitButtonWebElement.click();
             sleepFor(2);
             search.clearSearchInput();
         }

@@ -11,20 +11,20 @@ import org.testng.Assert;
  */
 public class HomePage extends commonAPI {
 
-    @FindBy(how = How.XPATH, using = ".//*[@id='nav-flyout-icp']/div[2]/a[1]/span")
+    @FindBy(how = How.XPATH, using = "//div[@id='nav-flyout-icp']//div[2]/a[1]/span/i")
     public static WebElement spanishlanguage;
-    @FindBy(how = How.XPATH, using = ".//*[@id='nav-flyout-icp']/div[2]/span/span")
+    @FindBy(how = How.XPATH, using = "//div[@id='nav-flyout-icp']//div[2]/a[1]/span/i")
     public static WebElement englishlanguage;
 
-    public void changeLanguage() throws InterruptedException {           //locators issue
-        mouseHoverByXpath(".//*[@id='icp-nav-flyout']/span[1]");
+    public void changeLanguage() throws InterruptedException {      //locator issue
+        mouseHoverByXpath("//span[@class='icp-nav-link-inner']");
         if (!spanishlanguage.isSelected()) {
             spanishlanguage.click();
         } else {
             System.out.println("Spanish already selected");
         }
         sleepFor(2);
-        mouseHoverByXpath(".//*[@id='icp-nav-flyout']/span[1]/span[1]/span[2]");
+        mouseHoverByXpath("//div[@id='nav-tools']//a/span[1]/span[1]/span[1");
         if (!englishlanguage.isSelected()) {
             englishlanguage.click();
         } else {
@@ -56,7 +56,7 @@ public class HomePage extends commonAPI {
         Assert.assertEquals(expectedTitle,actualTitle);
     }
 
-    @FindBy(how = How.LINK_TEXT,using = "Kitchen & Dining") //locators issue
+    @FindBy(how = How.LINK_TEXT,using = "Kitchen & Dining")              //locator issue
     public static WebElement kitchenAndDining;
 
     public void departments() throws InterruptedException {

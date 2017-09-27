@@ -1,6 +1,7 @@
 package search;
 
 import common.commonAPI;
+import reporting.TestLogger;
 
 import java.util.ArrayList;
 import java.util.List;

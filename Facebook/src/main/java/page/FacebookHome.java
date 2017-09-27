@@ -15,7 +15,7 @@ public class FacebookHome extends commonAPI {
     public static WebElement emailBox;
     @FindBy(how = How.XPATH,using = ".//*[@id='pass']")
     public static WebElement passwordBox;
-    @FindBy(how = How.XPATH,using = ".//*[@id='u_0_2']")
+    @FindBy(how = How.ID,using = "loginbutton")
     public static WebElement loginBtn;
 
     public void login(String email, String password){
@@ -59,5 +59,21 @@ public class FacebookHome extends commonAPI {
         selectYear.selectByVisibleText("1970");
         femaleCheckbox.click();
         createAccountBtn.click();
+    }
+
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'Forgot account')]")
+    public static WebElement forgotAccountBtn;
+
+    public void forgotAccount(){
+        forgotAccountBtn.click();
+        checkTitle("Forgot Password | Can't Log In | Facebook");
+    }
+
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'Create a Page')]")
+    public static WebElement createPage;
+
+    public void createPage() {
+        createPage.click();
+        checkTitle("Create a Page | Facebook");
     }
 }

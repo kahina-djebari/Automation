@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-Amazon_Automation_Test">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Amazon_Automation_Test" title="TestFacebookHome.TestCreateAccount" hash-for-method="testCreateAccount">testCreateAccount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Amazon_Automation_Test" title="TestFacebookHome.TestLogin" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Amazon_Automation_Test" title="TestFacebookProfile.TestChangeSettings" hash-for-method="testChangeSettings">testChangeSettings</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Amazon_Automation_Test -->
@@ -125,29 +120,14 @@
           <div class="suite-Amazon_Automation_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestFacebookHome.TestLogin</span>
+              <span class="class-name">TestFacebookProfile.TestChangeSettings</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Amazon_Automation_Test-class-passed -->
-          <div class="suite-Amazon_Automation_Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestFacebookHome.TestCreateAccount</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateAccount">
-                  </a> <!-- testCreateAccount -->
-                  <span class="method-name">testCreateAccount</span>
+                  <a name="testChangeSettings">
+                  </a> <!-- testChangeSettings -->
+                  <span class="method-name">testChangeSettings</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,15 +144,14 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Amazon Automation Test&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;useCloudEnv&quot; value=&quot;false&quot;/&gt;
   &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
-  &lt;parameter name=&quot;os_version&quot; value=&quot;Sierra&quot;/&gt;
+  &lt;parameter name=&quot;os_version&quot; value=&quot;10&quot;/&gt;
   &lt;parameter name=&quot;browserVersion&quot; value=&quot;53.0&quot;/&gt;
-  &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;browserName&quot; value=&quot;Firefox&quot;/&gt;
   &lt;parameter name=&quot;cloudEnvName&quot; value=&quot;browserstack&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.facebook.com/&quot;/&gt;
   &lt;test name=&quot;Facebook Home&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestFacebookHome.TestLogin&quot;/&gt;
-      &lt;class name=&quot;TestFacebookHome.TestCreateAccount&quot;/&gt;
+      &lt;class name=&quot;TestFacebookProfile.TestChangeSettings&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Facebook Home --&gt;
 &lt;/suite&gt; &lt;!-- Amazon Automation Test --&gt;
@@ -186,7 +165,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Facebook Home (2 classes)</span>
+                <span class="test-name">Facebook Home (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,20 +191,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCreateAccount')
-data.setCell(0, 2, 'TestFacebookHome.TestCreateAccount')
-data.setCell(0, 3, 2428);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLogin')
-data.setCell(1, 2, 'TestFacebookHome.TestLogin')
-data.setCell(1, 3, 1819);
+data.setCell(0, 1, 'testChangeSettings')
+data.setCell(0, 2, 'TestFacebookProfile.TestChangeSettings')
+data.setCell(0, 3, 9380);
 window.suiteTableData['Amazon_Automation_Test']= { tableData: data, tableDiv: 'times-div-Amazon_Automation_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Amazon_Automation_Test">
               </div> <!-- times-div-Amazon_Automation_Test -->
             </div> <!-- times-div -->
@@ -251,33 +226,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestFacebookHome.TestLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestFacebookProfile.TestChangeSettings</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(false, browserstack, Windows, Sierra, firefox, 53.0, https://www.facebook.com/)</span>
+                <span class="method-name">setUp(false, browserstack, Windows, 10, Firefox, 53.0, https://www.facebook.com/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testLogin</span>
-                <span class="method-start">8329 ms</span>
+                <span class="method-name">testChangeSettings</span>
+                <span class="method-start">6877 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">10149 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestFacebookHome.TestCreateAccount</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(false, browserstack, Windows, Sierra, firefox, 53.0, https://www.facebook.com/)</span>
-                <span class="method-start">10453 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testCreateAccount</span>
-                <span class="method-start">16244 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">cleanUp</span>
-                <span class="method-start">18672 ms</span>
+                <span class="method-start">16257 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,20 +9,20 @@
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="Firefox"/>
-    <parameter name="browserVersion" value="54"/>
+    <parameter name="browserVersion" value="53.0"/>
     <parameter name="url" value="http://amazon.com"/>
 
     <test name = "Amazon Home">
         <classes>
-           <!-- <class name="AmazonHome.TestDepartments"/>
-            <class name="AmazonHome.TestDropDownMenu"/>
-            <class name="AmazonHome.TestDropDownList"/>
-            <class name="AmazonHome.TestChangeLanguage"/>
-            <class name="AmazonHome.TestCartBtn"/>
-            <class name="AmazonHome.TestSignIn"/>
+            <!--<class name="AmazonHome.TestDepartments"/>-->
+            <!--<class name="AmazonHome.TestChangeLanguage"/>-->
+            <!--<class name="AmazonHome.TestDropDownList"/>-->
+            <!--<class name="AmazonHome.TestCartBtn"/>-->
+            <!--<class name="AmazonHome.TestSignIn"/>-->
             <class name="AmazonHome.TestHomeBtns"/>
-            <class name="AmazonHome.TestSearchItems"/>-->
-            <class name="AmazonHome.TestSearchByReadingFromXlFile"/>
+            <!-- <class name="AmazonHome.TestSearchItems"/>-->
+            <!--  <class name="AmazonHome.TestDropDownMenu"/>-->
+          <!--  <class name="AmazonHome.TestSearchByReadingFromXlFile"/>-->  <!--extent report-->
         </classes>
     </test>
 
