@@ -1,6 +1,7 @@
 package page;
 
 import common.commonAPI;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -30,7 +31,7 @@ public class PageSearchItems extends commonAPI {
     public void searchFor(String value){
 //        TestLogger.log(getClass().getSimpleName() + ": " + converToString(new Object(){}.getClass()
 //                .getEnclosingMethod().getName()+ ": "+ value));
-        getSearchInputWebElement().sendKeys(value);
+        getSearchInputWebElement().sendKeys(value, Keys.ENTER);
     }
     public static void submitSearchButton(){
         getSubmitButtonWebElement().click();

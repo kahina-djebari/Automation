@@ -14,7 +14,9 @@
 
     <test name = "BOA Home">
         <classes>
-            <class name="testBOAHomePage.TestMainNavBtns"/>
+            <!--<class name="testBOAHomePage.TestMainNavBtns"/>-->
+            <class name="testBOAHomePage.TestMortgage"/>
+            <!--<class name="testBOAHomePage.TestLocations"/>-->
         </classes>
     </test>
 

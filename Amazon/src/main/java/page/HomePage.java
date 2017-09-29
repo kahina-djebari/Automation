@@ -1,7 +1,9 @@
 package page;
 
 import common.commonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
@@ -11,24 +13,17 @@ import org.testng.Assert;
  */
 public class HomePage extends commonAPI {
 
-    @FindBy(how = How.XPATH, using = "//div[@id='nav-flyout-icp']//div[2]/a[1]/span/i")
+    @FindBy(how = How.XPATH, using = ".//*[@id='nav-flyout-icp']/div[2]/a[1]/span")
     public static WebElement spanishlanguage;
-    @FindBy(how = How.XPATH, using = "//div[@id='nav-flyout-icp']//div[2]/a[1]/span/i")
-    public static WebElement englishlanguage;
 
-    public void changeLanguage() throws InterruptedException {      //locator issue
-        mouseHoverByXpath("//span[@class='icp-nav-link-inner']");
+    public void changeLanguage() {
+        WebElement element = driver.findElement(By.xpath(".//*[@id='icp-nav-flyout']"));
+        Actions action = new Actions(driver);
+        action.moveToElement(element).perform();
         if (!spanishlanguage.isSelected()) {
             spanishlanguage.click();
         } else {
             System.out.println("Spanish already selected");
-        }
-        sleepFor(2);
-        mouseHoverByXpath("//div[@id='nav-tools']//a/span[1]/span[1]/span[1");
-        if (!englishlanguage.isSelected()) {
-            englishlanguage.click();
-        } else {
-            System.out.println("English already selected");
         }
     }
 
@@ -56,14 +51,16 @@ public class HomePage extends commonAPI {
         Assert.assertEquals(expectedTitle,actualTitle);
     }
 
-    @FindBy(how = How.LINK_TEXT,using = "Kitchen & Dining")              //locator issue
+    @FindBy(how = How.XPATH,using = ".//*[@id='nav-flyout-shopAll']/div[3]/div[12]/div[1]/div/a[2]/span")
     public static WebElement kitchenAndDining;
 
-    public void departments() throws InterruptedException {
-        mouseHoverByLinkText("Departments");
-        sleepFor(2);
-        mouseHoverByLinkText("Home, Garden & Tools");
-        kitchenAndDining.click();
+    public void departments() {
+        WebElement element = driver.findElement(By.xpath(".//*[@id='nav-link-shopall']"));
+        Actions action =new Actions(driver);
+        action.moveToElement(element).perform();
+        WebElement ele = driver.findElement(By.xpath("//span[@class='nav-text'][text()='Home, Garden & Tools']"));
+        action.moveToElement(ele).perform();
+       // kitchenAndDining.click();
     }
 
     @FindBy(how = How.XPATH,using = ".//*[@id='nav-your-amazon']")

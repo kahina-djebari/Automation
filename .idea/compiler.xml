@@ -10,6 +10,7 @@
         <module name="BankOfAmerica" />
         <module name="Facebook" />
         <module name="generic" />
+        <module name="restAPI" />
         <module name="Wegmans" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="BankOfAmerica" target="1.8" />
       <module name="Facebook" target="1.8" />
       <module name="generic" target="1.8" />
+      <module name="restAPI" target="1.8" />
       <module name="Wegmans" target="1.8" />
     </bytecodeTargetLevel>
   </component>

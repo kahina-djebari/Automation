@@ -10,7 +10,7 @@ import page.HomePage;
  */
 public class TestDepartments extends commonAPI {
     @Test
-    public void testDepartments() throws InterruptedException {
+    public void testDepartments(){
         HomePage homePage = PageFactory.initElements(driver,HomePage.class);
         homePage.departments();
     }

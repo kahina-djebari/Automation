@@ -1,15 +1,10 @@
 package page;
 
 import common.commonAPI;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import java.util.List;
-
-
-
 
 /**
  * Created by Kahina on 9/13/2017.
@@ -74,33 +69,33 @@ public class FacebookProfile extends commonAPI {
         }
     }
 
-    @FindBy(how = How.XPATH, using = "//div[@id='left_nav_section_nodes']//div[1]/ul/li[1]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='News Feed']")
     public static WebElement newsFeed;
-    @FindBy(how = How.XPATH, using = "//div[@id='left_nav_section_nodes']//div[1]/ul/li[2]/a/div[contains(text(),'Messenger')]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Messenger']")
     public static WebElement messenger;
-    @FindBy(how = How.XPATH, using = "//div[@id='left_nav_section_nodes']//div[1]/ul/li[3]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Watch']")
     public static WebElement watch;
-    @FindBy(how = How.XPATH, using = "//div[@id='left_nav_section_nodes']//div[1]/ul/li[4]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Marketplace']")
     public static WebElement marketplace;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[1]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Events']")
     public static WebElement events;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[2]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Pages']")
     public static WebElement pages;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[3]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Groups']")
     public static WebElement groups;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[4]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Friends Lists']")
     public static WebElement friendLists;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[5]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Games']")
     public static WebElement games;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[6]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='On THis Day']")
     public static WebElement onThisDay;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[7]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Fundrisers']")
     public static WebElement fundRisers;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[8]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Live Video']")
     public static WebElement liveVideo;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[9]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Pokes']")
     public static WebElement pokes;
-    @FindBy(how = How.XPATH, using = "//div[@id='appsNav']/ul/li[10]")
+    @FindBy(how = How.XPATH, using = "//div[@class='linkWrap noCount'][text()='Suggest Edits']")
     public static WebElement suggestEdits;
 
     public void leftButtons() throws InterruptedException {

@@ -203,6 +203,15 @@ public class commonAPI {
         }
         return text;
     }
+    public List<String> getTextFromWebElementsXpath(String locator){
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.xpath(locator));
+        for(WebElement web:element){
+            text.add(web.getText());
+        }
+        return text;
+    }
     public List<WebElement> getListOfWebElementsByCss(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.cssSelector(locator));

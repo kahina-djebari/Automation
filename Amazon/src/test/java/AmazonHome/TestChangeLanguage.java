@@ -11,7 +11,7 @@ import page.HomePage;
 public class TestChangeLanguage extends commonAPI {
 
     @Test
-    public void testChangeLanguage() throws InterruptedException {
+    public void testChangeLanguage() {
         HomePage homePage = PageFactory.initElements(driver,HomePage.class);
         homePage.changeLanguage();
     }
