@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Amazon Automation Test" duration-ms="16741" started-at="2017-09-26T18:26:06Z" finished-at="2017-09-26T18:26:22Z">
+  <suite name="Amazon Automation Test" duration-ms="24291" started-at="2017-09-29T20:42:14Z" finished-at="2017-09-29T20:42:38Z">
     <groups>
     </groups>
-    <test name="Facebook Home" duration-ms="16741" started-at="2017-09-26T18:26:06Z" finished-at="2017-09-26T18:26:22Z">
+    <test name="Facebook Home" duration-ms="24291" started-at="2017-09-29T20:42:14Z" finished-at="2017-09-29T20:42:38Z">
       <class name="TestFacebookProfile.TestChangeSettings">
-        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestFacebookProfile.TestChangeSettings@2096442d]" name="setUp" is-config="true" duration-ms="6877" started-at="2017-09-26T14:26:06Z" finished-at="2017-09-26T14:26:13Z">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestFacebookProfile.TestChangeSettings@59e84876]" name="setUp" is-config="true" duration-ms="10362" started-at="2017-09-29T16:42:14Z" finished-at="2017-09-29T16:42:24Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testChangeSettings()[pri:0, instance:TestFacebookProfile.TestChangeSettings@2096442d]" name="testChangeSettings" duration-ms="9380" started-at="2017-09-26T14:26:13Z" finished-at="2017-09-26T14:26:22Z">
+        <test-method status="PASS" signature="testChangeSettings()[pri:0, instance:TestFacebookProfile.TestChangeSettings@59e84876]" name="testChangeSettings" duration-ms="12537" started-at="2017-09-29T16:42:24Z" finished-at="2017-09-29T16:42:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChangeSettings -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:TestFacebookProfile.TestChangeSettings@2096442d]" name="cleanUp" is-config="true" duration-ms="469" started-at="2017-09-26T14:26:22Z" finished-at="2017-09-26T14:26:22Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:TestFacebookProfile.TestChangeSettings@59e84876]" name="cleanUp" is-config="true" duration-ms="1375" started-at="2017-09-29T16:42:36Z" finished-at="2017-09-29T16:42:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

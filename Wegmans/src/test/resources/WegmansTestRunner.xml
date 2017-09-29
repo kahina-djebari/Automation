@@ -16,7 +16,7 @@
         <classes>
          <!--   <class name="testWegmansHome.TestProducts"/>-->
             <!--<class name="testWegmansHome.TestSingup"/>-->
-            <class name="testWegmansHome.TestHomeBtns"/>
+            <!--<class name="testWegmansHome.TestHomeBtns"/>-->
         </classes>
     </test>
 

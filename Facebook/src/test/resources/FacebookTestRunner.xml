@@ -21,7 +21,7 @@
            <!-- <class name="TestFacebookProfile.TestSearchFriends"/>-->
             <!--<class name="TestFacebookHome.TestCreatePage"/>-->
             <!--<class name="TestFacebookHome.TestForgotAccount"/>-->
-            <class name="TestFacebookProfile.TestChangeSettings"/>
+            <!--<class name="TestFacebookProfile.TestChangeSettings"/>-->
         </classes>
     </test>
 
