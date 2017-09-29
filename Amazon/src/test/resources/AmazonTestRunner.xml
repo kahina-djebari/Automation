@@ -22,7 +22,7 @@
             <!--<class name="AmazonHome.TestHomeBtns"/>-->
             <!-- <class name="AmazonHome.TestSearchItems"/>-->
              <!-- <class name="AmazonHome.TestDropDownMenu"/>-->
-            <class name="AmazonHome.TestSearchByReadingFromXlFile"/>  <!--extent report-->
+            <!--<class name="AmazonHome.TestSearchByReadingFromXlFile"/>-->  <!--extent report-->
         </classes>
     </test>
 
