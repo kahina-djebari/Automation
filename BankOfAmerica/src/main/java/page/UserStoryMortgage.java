@@ -40,6 +40,6 @@ public class UserStoryMortgage extends commonAPI {
         zipCodeBox.sendKeys("20854");
         updateRateBtn.click();
         sleepFor(2);
-        Assert.assertEquals(resultBox.getText(),"$1,660");
+        Assert.assertEquals(resultBox.getText(),"$1,686");
     }
 }

@@ -60,7 +60,9 @@ public class HomePage extends commonAPI {
         action.moveToElement(element).perform();
         WebElement ele = driver.findElement(By.xpath("//span[@class='nav-text'][text()='Home, Garden & Tools']"));
         action.moveToElement(ele).perform();
-       // kitchenAndDining.click();
+        kitchenAndDining.click();
+        checkTitle("Amazon.com: Kitchen & Dining: Home & Kitchen: Dining & Entertaining: Kitchen " +
+                   "& Table Linens & More");
     }
 
     @FindBy(how = How.XPATH,using = ".//*[@id='nav-your-amazon']")
